@@ -1,11 +1,7 @@
 #!/bin/bash
 
 RELEASE_NAME=v0.1-$(date +%Y%m%d_%H%M%S)
-RELEASE_MODULES="luci minidlna luci-app-minidlna \
-	samba36-server transmission-web openvpn-openssl openssl-util \
-	luci-app-openvpn kmod-usb-storage kmod-fs-ext4 kmod-fs-vfat \
-	kmod-nls-cp437 kmod-nls-iso8859-1 kmod-fs-msdos kmod-fs-ntfs \
-	block-mount"
+RELEASE_MODULES="uhttpd luci luci-app-uhttpd luci-i18n-base-zh-cn wget ca-certificates ca-bundle librt openssl-util curl"
 
 echo "Begin build ${RELEASE_NAME} with modules ${RELEASE_MODULES}"
 	
